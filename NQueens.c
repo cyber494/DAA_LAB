@@ -3,9 +3,23 @@
 #define N 4
 void printSolution(int board[N][N])
 {
+    printf("Solution 1 :\n");
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             if(board[i][j])
+                printf("Q ");
+            else
+                printf(". ");
+        }
+        printf("\n");
+    }
+}
+void printRevSolution(int board[N][N])
+{
+    printf("Solution 2 :\n");
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            if(board[N-i-1][j])
                 printf("Q ");
             else
                 printf(". ");
@@ -56,13 +70,20 @@ int main(){
         return false;
     }
     printSolution(board);
+    printRevSolution(board);
     return true;
     return 0;
 }
 
 
 // output:
+// Solution 1 :
 // . . Q . 
 // Q . . .
 // . . . Q
 // . Q . .
+// Solution 2 :
+// . Q . .
+// . . . Q
+// Q . . .
+// . . Q .
