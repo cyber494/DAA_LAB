@@ -44,3 +44,7 @@ int main() {
 
     return 0;
 }
+
+// ouput:
+// Sorted array:
+// 1 5 7 8 9 10 

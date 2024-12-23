@@ -102,3 +102,9 @@ int main() {
     }
     return 0;
 }
+
+
+// output : 
+// Resultant matrix:
+// 9	12	
+// 19	26
